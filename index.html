@@ -23,7 +23,7 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#certification">Certification</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -39,66 +39,110 @@
                 <div class="main-header">
                     <h1>Hii</h1>
                     <h4>👋</h4>
-                    <h2>My name is Norbu Lama.</h2>
-                    <h3>Aspiring Software Developer and IT Enthusiast.</h3>
+                    <h2>I'm Norbu Lama.</h2>
+                    <h3>Aspiring Software Engineer</h3>
+                    <h5>Building AI-Powered Solutions & Scalable Systems</h5>
                 </div>
             </div>
         </section>
 
-        <section class="about-me" id="about">
+        <section class="about-me-section" id="about">
             <h1>About Me</h1>
-            <img src="images-insert/About-me.png">
+            <div class="about-me-container">
+                <!-- Left Card: Personal Info & Work -->
+                <div class="about-card">
+                    <pre><code>
+class about_me:
+        def __init__(self):
+            self.name = 'Norbu Lama'
+            self.date_of_birth = '08 Mar 2000'
+            self.email = 'norbuhyolmo7@gmail.com'
+
+        def work_experience(self):
+            return [
+                {'May 2025 - July 2025': 'Cloud Architect - Adex International'},
+                {'Nov 2025 - Feb 2026': 'Machine Learning Apprenticeship - Tekbay Digital'}
+            ]
+        </code></pre>
+                </div>
+
+                <!-- Right Card: Skills & Education -->
+                <div class="about-card">
+                    <pre><code>
+            def skills(self):
+                return [
+                    {'FrontEnd': 'HTML, CSS, React'},
+                    {'BackEnd': 'Django'},
+                    {'Languages': 'Python, JavaScript'},
+                    {'Database': 'PostgreSQL'},
+                    {'Tools': 'GIT'},
+                    {'Cloud/DevOps': 'AWS, Docker, CI/CD'},
+                    {'AI/ML': 'Sagemaker, Model Training, Feature Engineering, Data Preprocessing'}
+                ]
+
+            def education(self):
+                return [
+                    {'2016': 'New Buddha Prakash Secondary School'},
+                    {'2017-2019': 'Dayananda Anglo Vedic (DAV) - Computer Science'},
+                    {'2020-2024': 'UCSI University - BSc Hons Computing'}
+                ]
+        </code></pre>
+                </div>
+
+                <!-- Bottom Card: Projects -->
+                <div class="about-card">
+                    <pre><code>
+                                                        def projects(self):
+                                                            return [
+                                                                {
+                                                                    'Realtime Anomaly Detection Pipeline': [
+                                                                        'Built a streaming ML pipeline using Kinesis, Lambda, and SageMaker (lab-based implementation)',
+                                                                        'Simulated event data using SageMaker notebook to feed and test the pipeline workflows'
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    'Data Processing & Feature Engineering': [
+                                                                        'Performed data cleaning, transformation, and feature engineering using SageMaker Notebooks',
+                                                                        'Prepared structured datasets optimized for ML model training'
+                                                                    ]
+                                                                }
+                                                            ]
+                            </code></pre>
+                </div>
+
+            </div>
+
         </section>
 
-        <section class="blog" id="blog">
-            <h1> My Blogs</h1>
-            <p> Although I don't have a much experience working for an organization, I do have some experience with
-                technologies and want to share my learning journey.</p>
 
-            <div class="row">
-                <div class="blog-col">
-                    <img src="images-insert/book1.webp">
-                    <div class="layer">
-                        <h3> Photoshop is one of the first technologies that I learned to use and still eager to learn
-                            even more about. I was always interested in designing new things and creating arts. As I
-                            delved into this powerful image editing software, I was initially overwhelmed by the
-                            plethora of tools and features it offers. However, through patient experimentation and
-                            online tutorials, I've gradually grown comfortable with its vast toolkit. </h3>
+        <section class="certification-section" id="certification">
+            <div class="certification-header">
+                <h1> My Certifications</h1>
+            </div>
+
+            <div class="certification-container">
+                <div class="left-certification-container">
+                    <div class="image-container">
+                        <img src="images-insert/solutions badge.png">
                     </div>
+
                 </div>
 
-                <div class="blog-col">
-                    <img src="images-insert/book2.webp">
-                    <div class="layer">
-                        <h3>My interest in game development grew as I became more accustomed to designing software like
-                            Photoshop, Illustrator
-                            It was an exciting adventure learning game programming with unity. Though the complexity of
-                            game design and code initially seemed intimidating, as I immersed myself in Unity's
-                            tutorials and documentation, I started to uncover its strong powers and went from several
-                            scratch projects to producing my first 2D platformer adventure, which even my teachers found
-                            admirable. </h3>
-                    </div>
-                </div>
-
-                <div class="blog-col">
-                    <img src="images-insert/book3.webp">
-                    <div class="layer">
-                        <h3>I've always struggled to make decisions when it comes to choosing a career path, but I've
-                            learned so much by exploring several artistic and technical fields. I've liked developing
-                            new abilities and technologies, from studying design software like Photoshop to diving into
-                            game production with Unity. I'm eager to put my inventive problem-solving skills to use on a
-                            new project as I enter the realm of software development and dig into programming languages
-                            like Python and data structures and algorithms (DSA).</h3>
+                <div class="right-certification-container">
+                    <div class="image-container">
+                        <img src="images-insert/ml badge.png">
                     </div>
                 </div>
             </div>
+
         </section>
 
         <section class="my-projects" id="projects">
-            <h1> My Projects</h1>
-            <p> Some of the few projects previously made that I'm proud of.</p>
-            <p> </p>
+            <div class="projects-header-container">
+                <h1> My Projects</h1>
+                <p> Some of the few projects previously made that I'm proud of.</p>
 
+            </div>
             <div class="row">
                 <div class="my-projects-col">
                     <img class="img-anim" src="images-insert/final-game.gif">
@@ -121,7 +165,10 @@
                     <p>Provide me with the opportunity to learn and add more projects to my portfolio. 😉 Thank you.</p>
                 </div>
             </div>
+
         </section>
+
+
 
         <section class="location" id="contact">
             <h1> Contact</h1>
@@ -132,16 +179,24 @@
         </section>
 
         <section class="find-me-on">
-            <h1> Find me on:</h1>
-            <a href="https://www.linkedin.com/in/norbulama/"> in/norbulama</a>
-            <a href="https://github.com/NorbuHyolmo"> github.com/norbuhyolmo</a>
-            <a href="https://www.facebook.com/NorbuHero"> facebook.com/norbuhero</a>
-            <a href="https://www.instagram.com/norbulama_/"> instagram.com/norbulama_</a>
-            <div class="icons">
-                <img src="images-insert/in_iconW.png">
-                <img src="images-insert/git_iconW.png">
-                <img src="images-insert/fb_iconW.png">
-                <img src="images-insert/ig_iconW.png">
+            <div class="find-me-on-header">
+                <h1> Find me on:</h1>
+            </div>
+
+            <div class="connection-container">
+
+                <div class="icons">
+                    <img src="images-insert/in_iconW.png">
+                    <img src="images-insert/git_iconW.png">
+                    <img src="images-insert/fb_iconW.png">
+                    <img src="images-insert/ig_iconW.png">
+                </div>
+                <div class="text-container">
+                    <a href="https://www.linkedin.com/in/norbulama/"> in/norbulama</a>
+                    <a href="https://github.com/NorbuHyolmo"> github.com/norbuhyolmo</a>
+                    <a href="https://www.facebook.com/NorbuHero"> facebook.com/norbuhero</a>
+                    <a href="https://www.instagram.com/norbulama_/"> instagram.com/norbulama_</a>
+                </div>
             </div>
         </section>
 
